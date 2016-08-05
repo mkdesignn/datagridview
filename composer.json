@@ -1,0 +1,19 @@
+{
+    "name": "mkdesign82/datagridview",
+    "type": "mit",
+    "authors": [
+        {
+            "name": "mohammad",
+            "email": "mohammad.kaab@gmai.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "mkdeign82\\datagridview":"dtagridview/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5"
+    }
+}
