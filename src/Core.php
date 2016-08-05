@@ -108,7 +108,7 @@ class Core{
 
     private function callAjax($table, $data){
         $ajax = "$.ajax({";
-        $ajax .= "url: '" . action('\mkdesign82\datagridview\TestController@postIndex') . "',";
+        $ajax .= "url: '" . action('\mkdesignn\datagridview\TestController@postIndex') . "',";
         $ajax .= "type: 'POST',";
         $ajax .= $data;
         $ajax .= "success:function(e){ e = JSON.parse(e);  $('table tbody tr').remove(); $('table').parent().parent().parent().find('.pagination').remove();  result = e; " . $this->success() . " }";
