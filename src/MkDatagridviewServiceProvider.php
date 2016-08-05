@@ -18,7 +18,7 @@ class MkDatagridviewServiceProvider extends ServiceProvider{
     }
 
 	public function boot(){
-		$this->app['router']->post('test', '\mkdesignn\datagridview\TestController@postIndex');
+		$this->app['router']->post('datagridview', '\mkdesignn\datagridview\DataGridViewController@postIndex');
 	}
 
 }
