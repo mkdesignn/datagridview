@@ -10,7 +10,7 @@
     ],
     "autoload":{
         "psr-4":{
-            "mkdeignn\\datagridview\\":"src/"
+            "mkdesignn\\datagridview\\":"src/"
         }
     },
     "require": {
