@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Session;
 
-class TestController extends Controller
+class DataGridViewController extends Controller
 {
 
     protected $request;
