@@ -1,5 +1,5 @@
 <?php
-namespace mkdesign82\datagridview;
+namespace mkdesignn\datagridview;
 
 use DB;
 use Illuminate\Support\Facades\Session;
