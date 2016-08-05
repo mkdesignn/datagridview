@@ -1,5 +1,5 @@
 {
-    "name": "mkdesign82/datagridview",
+    "name": "mkdesignn/datagridview",
     "type": "mit",
     "authors": [
         {
@@ -9,10 +9,9 @@
     ],
     "autoload":{
         "psr-4":{
-            "mkdeign82\\datagridview":"dtagridview/"
+            "mkdeignn\\datagridview\\":"src/"
         }
-    },
-    "minimum-stability": "dev",
+    }
     "require": {
         "illuminate/support": "~5"
     }
