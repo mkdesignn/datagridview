@@ -1,6 +1,6 @@
 <?php 
 
-namespace mkdesign82\datagridview;
+namespace mkdesignn\datagridview;
 use Illuminate\Support\ServiceProvider;
 
 class MkDatagridviewServiceProvider extends ServiceProvider{
