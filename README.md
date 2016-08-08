@@ -43,6 +43,9 @@ With composer :
   echo DataGrid::build($table, $columns, $column_title, $data_table_id)->render();
 ```
 
+the above code will give you full dynamic datatable .
+
+
 ## Examples Num2
 
 ### What if you wanted to retrieve only the result and you did not interest with the view of the table, the only things you should do it's to use result instead of render
@@ -53,3 +56,23 @@ With composer :
   $data_table_id:: 'table_1'
   DataGrid::build($table, $columns, $column_title, $data_table_id)->result();
 ```
+
+the above code will return you result which you can access it by ajax.complete method which this result is derived of you data_table_id.
+
+## Examples Num2
+
+### access result
+```
+ $.ajaxComplete(function(event, xhr, data){
+    console.log(data_table_id) // will show you the result
+ })
+```
+
+the result contains records, column per page, current_page, and more ...
+
+## One more feature 
+
+
+
+
+
