@@ -1,7 +1,5 @@
 # datagridview
 
-description
-===========
 
 Most of the time you face hard time to render data into datagrid and plus that using ajax to do that .
 In this package I have made it so easy that with 4 arguments you can build your datagrid and use it in a very effesion way .
