@@ -48,7 +48,7 @@ the above code will give you full dynamic datatable .
 
 ## Examples Num2
 
-### What if you wanted to retrieve only the result and you did not interest with the view of the table, the only things you should do it's to use result instead of render
+What if you wanted to retrieve only the result and you did not interest with the view of the table, the only things you should do it's to use result instead of render
 ```
   $table:: 'Table_name'
   $columns:: ['column_1', 'column_2'];
@@ -57,9 +57,8 @@ the above code will give you full dynamic datatable .
   DataGrid::build($table, $columns, $column_title, $data_table_id)->result();
 ```
 
-the above code will return you result which you can access it by ajax.complete method which this result is derived of you data_table_id.
+the above code will return you result which you can access it by ajax.complete method which this result is derived of you'r data_table_id.
 
-## Examples Num2
 
 ### access result
 ```
@@ -68,11 +67,24 @@ the above code will return you result which you can access it by ajax.complete m
  })
 ```
 
-the result contains records, column per page, current_page, and more ...
+the result its an object which contains records, column per page, current_page, and much more ... 
 
-## One more feature 
+## One more feature - Examples Num3
+
+what if you want to use filtering on your datatable, well its very easy in using this datagrid.
+
+```
+  $table:: 'Table_name'
+  $columns:: ['column_1', 'column_2'];
+  $columns_title:: ['column_1_name', 'column_2_name'];
+  $data_table_id:: 'table_1'
+  $type = ['column_to_use_it_as_filter']
+  DataGrid::build($table, $columns, $column_title, $data_table_id, $type)->result();
+```
+
+and thats it , now you can use it with one filter on your datatable. which you can filter throught it and also search by choosin that one single filtering .
 
 
-
+## more feature on the way 
 
 
