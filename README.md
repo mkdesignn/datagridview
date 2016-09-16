@@ -2,7 +2,7 @@
 
 
 Most of the time you face hard time to render data into datatables and much more harder thing is to use ajax.
-In this package I have made it so easy that with 4 arguments you can build your datagrid and use it in a very effesion way .
+In this package I have made it so easy that with 4 arguments you can build your datagrid and use it in a very efficient way .
 the theme that this datagrid is build on is metronic ver.4.
 
 ## Usage
