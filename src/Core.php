@@ -28,26 +28,21 @@ class Core{
     protected $table_id;
 
 
-    /**
-     * How many columns we try to user as filter
-     *
-     * @var array
-     */
-    protected $type = [];
+    protected $search_timing;
 
     /**
      * @param array $select
      * @param $columns
      * @param $table_id
-     * @param array $type
+     * @param int $search_timing
      * @return build
      */
-    public function build($select = [], $columns , $table_id, $type = []){
+    public function build($select = [], $columns , $table_id, $search_timing = 0){
 
         $this->select = $select;
         $this->columns = $columns;
         $this->table_id = $table_id;
-        $this->type = $type;
+        $this->search_timing = $search_timing;
         return $this->render();
     }
 
@@ -59,10 +54,14 @@ class Core{
             "triggerAjax();
             var search = '',
                 page_id = '',
-                row_per_page = '';
+                row_per_page = '',
+                time = 0;
             $('#".$this->table_id." .search').on('keyup', function(){
-                search = $(this).val();
-                triggerAjax(search, page_id, row_per_page);
+                window.clearInterval(time);
+                time = window.setInterval(function(){
+                    search = $(this).val();
+                    triggerAjax(search, page_id, row_per_page);
+                }, ".$this->search_timing.")
             })
 
             $('body').on('click', '.pagination li a', function(e){
